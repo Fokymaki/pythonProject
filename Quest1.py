@@ -6,10 +6,10 @@ def cool_num(input_str):
         print(z[0].zfill(4) + '\\'+ z[1].zfill(5))
 
 def read_str(input_str):
-    match = re.findall(r'\d{2,4}\\\d{2,5}',s,re.I)
+    match = re.findall(r'\d{2,4}\\\d{2,5}',input_str,re.I)
     cool_num(match)
 
-s = input()
-read_str(s)
+
+read_str('Адресс 124\\56. Почта 78\\900')
 
 
